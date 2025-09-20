@@ -1,0 +1,186 @@
+body {
+  background: 
+    linear-gradient(rgba(16,36,21,0.85), rgba(11,26,11,0.92)), /* dark overlay for readability */
+    url('https://static.vecteezy.com/system/resources/previews/001/879/416/original/planning-monthly-budget-for-shopping-and-purchase-manage-financial-plan-with-calculator-financial-consulting-software-banking-accounting-platform-illustration-of-website-banner-software-poster-free-vector.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #e6ffe6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 480px;
+  margin: 2rem auto 0 auto;
+  background: rgba(12, 24, 12, 0.96);
+  border-radius: 22px;
+  box-shadow: 0 8px 36px rgba(31, 255, 93, 0.16);
+  padding: 2.2rem 2rem;
+  border: 1.5px solid #1eff5d33;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2.2rem;
+  background: linear-gradient(90deg, #1eff5d22 0%, #14521422 100%);
+  border-radius: 14px;
+  padding: 1.2rem 0 1rem 0;
+  box-shadow: 0 2px 12px #21fb6711;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  color: #1eff5d;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #21fb67a8;
+  font-size: 2.2rem;
+}
+
+header p {
+  color: #9fe6b4;
+  font-size: 1.1rem;
+}
+
+.balance-section {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.balance-section h2 {
+  margin-bottom: 1rem;
+}
+#balance {
+  color: #21fb67;
+  text-shadow: 0 0 6px #21fb67b2;
+}
+.summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.summary div {
+  flex: 1;
+  background: #132313;
+  padding: 1rem 0.5rem;
+  border-radius: 12px;
+  border: 1.5px solid #1eff5d50;
+  box-shadow: 0 2px 10px #1eff5d0c;
+}
+.income h3, .income p.plus {
+  color: #21fb67;
+}
+.expense h3, .expense p.minus {
+  color: #ff4f4f;
+}
+.plus {
+  font-weight: bold;
+}
+.minus {
+  font-weight: bold;
+}
+
+.form-section {
+  margin: 2rem 0 2rem 0;
+}
+.form-section h2 {
+  margin-bottom: 1rem;
+}
+#transactionForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+#transactionForm input {
+  padding: 0.8rem;
+  border: 1.5px solid #1eff5d90;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #101a10;
+  color: #e6ffe6;
+  transition: border 0.2s;
+}
+#transactionForm input:focus {
+  border: 2px solid #21fb67;
+  outline: none;
+}
+#transactionForm button {
+  background: linear-gradient(90deg, #1eff5d 0%, #145214 100%);
+  color: #101c10;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #21fb6733;
+  transition: background 0.2s, color 0.2s;
+}
+#transactionForm button:hover {
+  background: #101c10;
+  color: #21fb67;
+  border: 2px solid #21fb67;
+}
+
+.history-section h2 {
+  margin-bottom: 1rem;
+}
+#transactionList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #132313;
+  border-left: 6px solid #21fb67;
+  margin-bottom: 0.7rem;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  transition: background 0.2s;
+  color: #e6ffe6;
+  box-shadow: 0 2px 8px #21fb6733;
+}
+.transaction.expense {
+  border-left: 6px solid #ff4f4f;
+}
+.transaction span {
+  font-size: 1.02rem;
+}
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff4f4f;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: color 0.2s;
+}
+.delete-btn:hover {
+  color: #ffbaba;
+}
+.transaction .date {
+  color: #9fe6b4;
+  font-size: 0.95em;
+  margin-left: 1rem;
+}
+footer {
+  text-align: center;
+  color: #21fb67;
+  margin: 2rem 0 1rem 0;
+  font-size: 1.05rem;
+  letter-spacing: 1px;
+  opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+    max-width: 98vw;
+  }
+  .recipe-image {
+    height: 120px;
+  }
+}
